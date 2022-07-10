@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>profile-edit</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card  >
+  <div class="img-wrapper" >
+    <img src="./assets/imgs/lady_3.jpg"  />
+    <ion-button color="light">
+      <ion-icon slot="icon-only" name="camera-outline" color="medium">
+      </ion-icon>
+    </ion-button>
+  </div>
+ 
+</ion-card>
+
+
+ 
+  <div class="ion-padding Pincode_Form">
+    <form [formGroup]="Edit_profile" (ngSubmit)="onSubmit()" >
+   
+   <div>
+     <ion-list>
+     
+         <ion-item  class="ion-margin-bottom Input_num" expand="block" fill="outline" shape="round " color="primary">
+  
+           <ion-input type="text" formControlName="name" placeholder="Name"></ion-input>
+         </ion-item>
+         <small *ngIf="Edit_profile.get('name').invalid && (Edit_profile.get('name').dirty ||Edit_profile.get('name').touched )">
+           <small *ngIf="(Edit_profile.get('name')).errors?.required">Name is required</small>
+           question mark(?) is a safe navigation operator
+           <small *ngIf="(Edit_profile.get('name')).errors?.minlength">Please enter more than 4 character</small>
+         </small>
+ 
+         <ion-item class="ion-margin-bottom Input_num" expand="block" fill="outline" shape="round " color="primary">
+   
+           <ion-input type="email" placeholder="Enter Email" formControlName="email"></ion-input>
+         </ion-item>
+ 
+         <div *ngIf="(Edit_profile.get('email').invalid && (Edit_profile.get('email')).touched) || (Edit_profile.get('email')).dirty">
+           <small *ngIf="(Edit_profile.get('email')).errors?.required">Email is required</small>
+           question mark(?) is a safe navigation operator
+           <small *ngIf="(Edit_profile.get('email')).errors?.pattern">Please provide a valid email address</small>
+         </div>
+      
+        
+           <ion-item class="ion-margin-bottom Input_num" expand="block" fill="outline" shape="round " color="primary">
+            
+             <ion-input type="tel" formControlName="mobnoctrl" 
+               placeholder="Contact Number" class=""></ion-input>
+           </ion-item>
+           <div class="show-error">
+             <div *ngIf="Edit_profile.get('mobnoctrl').hasError('required') && Edit_profile.get('mobnoctrl').dirty">Please enter
+               mobile number
+             </div>
+             <div *ngIf="Edit_profile.get('mobnoctrl').hasError('pattern') && Edit_profile.get('mobnoctrl').dirty">
+               Please enter 10 digit mobile number</div>
+           </div> 
+           
+           
+           <ion-item class=" item-divider positive-bg light ion-margin-bottom  Input_num" expand="block" fill="outline" shape="round " color="primary">
+             <ion-textarea rows="6" cols="20" placeholder="Address" formControlName="texadd"></ion-textarea>
+
+           </ion-item>
+       </ion-list>
+   </div>
+   </form>
+   </div>
+
+
+
+</ion-content>
+
+<ion-footer >
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">SAVE</ion-title>
+  
+  </ion-toolbar>
+</ion-footer>

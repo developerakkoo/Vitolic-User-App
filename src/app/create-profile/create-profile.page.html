@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Create your profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <div class="Select_Location">
+    <ion-toolbar>
+      <ion-title color="warning"><h1>Create your Profile</h1></ion-title>
+    </ion-toolbar>
+  </div>
+  
+  
+  <div class="ion-padding Pincode_Form">
+     <form [formGroup]="create_profile" (ngSubmit)="onSubmit()" >
+    
+    <div>
+      <ion-list>
+      
+        <ion-item  class="ion-margin-bottom Input_num" expand="block" fill="outline" shape="round " color="primary">
+ 
+          <ion-input type="text" formControlName="name" placeholder="Name"></ion-input>
+        </ion-item>
+       
+
+        <ion-item class="ion-margin-bottom Input_num" expand="block" fill="outline" shape="round " color="primary">
+  
+          <ion-input type="email" placeholder="Enter Email" formControlName="email"></ion-input>
+        </ion-item>
+
+       
+     
+       
+          <ion-item class="ion-margin-bottom Input_num" expand="block" fill="outline" shape="round " color="primary">
+           
+            <ion-input type="tel" formControlName="mobnoctrl" 
+              placeholder="Contact Number" class=""></ion-input>
+          </ion-item>
+         
+          
+          
+          <ion-item class=" item-divider positive-bg light ion-margin-bottom  Input_num" expand="block" fill="outline" shape="round " color="primary">
+            <ion-textarea rows="6" cols="20" placeholder="Address" formControlName="texadd"></ion-textarea>
+
+          </ion-item>
+      </ion-list>
+    </div>
+    </form>
+    </div>
+
+ 
+</ion-content>
+
+
+<ion-footer >
+  <ion-toolbar color="primary"(click)="saveProfile()">
+    <ion-title class="ion-text-center">SAVE</ion-title>
+  
+  </ion-toolbar>
+</ion-footer>

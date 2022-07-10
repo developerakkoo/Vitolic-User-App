@@ -1,0 +1,28 @@
+
+
+.Select_Location h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    
+}
+.Select_Input{
+    margin-top: 2%;
+}
+.show-error{
+    padding-top: 0.2rem;
+    color: rgb(255, 0, 0);
+    font-size: 12px;
+}
+.Input_num {
+    --border-color: var(--ion-color-success, #21AD4B);
+  }
+  .Input_num:hover {
+    --border-color: var(--ion-color-success, #21AD4B);
+  }
+.Login_text h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+ 
+}

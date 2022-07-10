@@ -1,0 +1,104 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Cart
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Cart</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<div class="Select_Location">
+  <ion-toolbar>
+    <ion-title class="ion-text-center"><h1>Your Cart</h1>
+    <span class="HaveCard">you have 1 item in your cart</span></ion-title>
+   
+  </ion-toolbar>
+</div>
+
+<div>
+  <ion-card>
+    <ion-grid>
+   <ion-row>
+     <ion-col>
+       <div class="Close" ><ion-icon name="close-outline" class="ion-padding" ></ion-icon></div></ion-col>
+   </ion-row>
+        <ion-row  class="ion-padding">
+          
+          <ion-col>
+           Paneer 1kg  
+          </ion-col>
+          <ion-col>
+            <ion-icon name="close-outline" ></ion-icon>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="add-outline"></ion-icon>
+          </ion-col>
+          <ion-col>
+           1
+          </ion-col>
+          <ion-col><ion-icon name="remove-outline"></ion-icon></ion-col>
+          <ion-col>$400</ion-col>
+        </ion-row>
+        <ion-row  class="ion-padding">
+         
+          <ion-col>
+           Paneer 1kg  
+          </ion-col>
+          <ion-col>
+            <ion-icon name="close-outline" ></ion-icon>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="add-outline"></ion-icon>
+          </ion-col>
+          <ion-col>
+           1
+          </ion-col>
+          <ion-col><ion-icon name="remove-outline"></ion-icon></ion-col>
+          <ion-col>$400</ion-col>
+        </ion-row>
+        <ion-row  class="Amount">
+          <div >
+          <ion-col class="Ant">Amount</ion-col>
+          <ion-col class="Ant1">$400</ion-col>
+        </div>
+        
+        </ion-row>
+  </ion-grid>
+  </ion-card>
+  
+
+</div>
+<div class="ion-margin-top">
+  <!-- Expand -->
+<ion-button expand="block" shape="round" color="warning"> <ion-title color="light"class=" button_Tatal"><p>Select Delivery Address</p></ion-title></ion-button>
+</div>
+<div>
+  <ion-list class="ion-margin-top">
+    <ion-radio-group value="Cash On Delivery">
+      <ion-item>
+        <ion-label>Cash On Delivery</ion-label>
+        <ion-radio slot="start" value="biff"></ion-radio>
+      </ion-item>
+  
+      <ion-item class="ion-margin-top">
+        <ion-label>Pay Online</ion-label>
+        <ion-radio slot="start" value="Pay Online"></ion-radio>
+      </ion-item>
+  
+    </ion-radio-group>
+  </ion-list>
+  <div  class="button_Tatal">
+    <!-- Expand -->
+  <ion-button expand="block" shape="round" color="warning" class="" >
+    <ion-title color="light"class=" button_Tatal"><p>Pay Rs 200 Total</p></ion-title>
+    <!-- ]<ion-title class=" button_Tatal" color="light"><p>Pay Rs 200 Total</p></ion-title> -->
+  </ion-button>
+  </div>
+</div>
+</ion-content>

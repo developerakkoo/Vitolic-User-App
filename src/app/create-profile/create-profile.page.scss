@@ -1,0 +1,17 @@
+.Select_Location h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    
+}
+.Input_num{
+    margin-top: 6%;
+}
+
+
+.Input_num {
+    --border-color: var(--ion-color-success, #21AD4B);
+  }
+  .Input_num:hover {
+    --border-color: var(--ion-color-success, #21AD4B);
+  }

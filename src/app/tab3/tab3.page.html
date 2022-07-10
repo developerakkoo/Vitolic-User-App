@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+     Profile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Profile</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item detail [routerLink]="['/profile-edit']" >
+      <ion-label>Edit Profile</ion-label>
+    </ion-item>
+
+    <ion-item detail  [routerLink]="['/view-order']">
+      <ion-label>View Orders</ion-label>
+    </ion-item>
+
+    <ion-item detail [routerLink]="['/bill-history']">
+      <ion-label>Bill History</ion-label>
+    </ion-item>
+
+    <ion-item detail [routerLink]="['/coupan-code']">
+      <ion-label>Coupan Code</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
